@@ -1,0 +1,62 @@
+
+header{
+    margin-top: 20px;
+}
+.home,
+.contact{
+    background-color: rgb(238, 230, 225);
+}
+.about{
+    background-color: rgb(20, 20, 20);
+}
+
+/*sezione nav */
+
+ /*logo*/
+ .logo{
+    margin-left: 25px;
+    border-top: 2px groove;
+    border-left: 2px groove;
+    border-right: 2px groove;
+    border-bottom: 2px groove;
+    padding: 6px;
+    border-radius: 3px;
+  }
+  .logo:hover{
+    border-color: rgba(0, 0, 0, 0);
+    text-decoration:line-through;
+    text-decoration-color: rgba(95, 158, 160,0.5);
+  }
+
+ /*nav*/
+.nav-link{
+    font-size: 21px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin-right: 5px;
+    position: relative;
+ }
+ .nav-link::after{
+     content: "";
+     opacity: 0;
+     transition: all 0.5s;
+     height: 2px;
+     width: 100%;
+     background-color: white;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+ }
+ .nav-link:hover::after{
+     opacity: 1;
+ }
+
+ 
+ /*container bordi*/
+ .container ,
+ .container1{
+    border-top: 0.5px groove  rgba(0, 0, 0, 0);
+    border-left: 0.5px groove rgba(0, 0, 0, 0) ;
+    border-right: 0.5px groove rgba(0, 0, 0, 0);
+    border-bottom: 0.5px groove rgba(0, 0, 0, 0) ;
+ }

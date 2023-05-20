@@ -1,0 +1,200 @@
+
+  .logo{
+    border-color: white;
+  }
+
+ /*sezione main*/
+ .title{
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  font-size: 70px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: underline;
+  text-decoration-line:line-through;
+  text-decoration-color: rgba(0, 247, 255, 0.3);
+ }
+ 
+ .grid-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.grid-item{
+  border-bottom: 1px solid rgba(240, 240, 240, 0.2);
+  width: 550px;
+  height: 300px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:550px) {
+  .grid-item{width:450px;}
+}
+@media screen and (max-width:450px){
+  .grid-item{width:350px;}
+}
+
+@media screen and (max-width:280px){
+  .grid-item{width:280px;}
+  .grid-item{border-bottom: 0;}
+}
+
+@media screen and (max-height:800px){
+  .grid-item{height: 275px;}
+  .title{margin-top: 0px;}
+  
+}
+
+.descrizione-grid{
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.myFoto{
+  height: 250px;
+  border-radius: 8px;
+  opacity: 0.5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.myFoto:hover{
+  opacity: 1;
+}
+.descrizioneLunga{
+  margin-top: -30px;
+}
+.frase{
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+@media screen and (max-width: 1100px)  {
+  .item-1{order:2;}
+  .item-2{order:1;}
+  .item-3{order:3;}
+  .item-4{order:4;}
+  .item-5{order:5;}
+}
+
+@media screen and (max-width: 550px)  {
+  .item-1{order:2;}
+  .item-2{order:1;}
+  .item-3{order:3;}
+  .item-4{order:4;}
+  .item-5{order:5;}
+
+  #html{margin-left: 15px;}
+  #css{margin-left: 15px;}
+  #js{margin-left: 15px;}
+
+}
+
+
+/*hard slills*/
+.hardSkills{
+  margin-top: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+#html{
+  margin-top: 10px;
+  font-family: monospace;
+  margin-right: 480px ;
+}
+#css{
+  margin-top: 10px;
+  font-family: monospace;
+  margin-right: 490px;
+}
+#js{
+  margin-top: 10px;
+  font-family: monospace;
+  margin-right: 500px;
+}
+.sfondoLoading{
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.line{
+  width: 80%; 
+  height: 6px;
+  background-color:  rgba(0, 247, 255, 0.3);
+  margin-top: 10px;
+  animation: loadingHtml 15s; 
+}
+@keyframes loadingHtml{
+  0%{width: 0%;}
+  75%{width: 80%;}
+  100%{width: 80%;}
+}
+
+.line1{
+  width: 70%; 
+  height: 6px;
+  background-color:  rgba(0, 247, 255, 0.3);
+  margin-top: 10px;
+  animation: loadingCss 15s; 
+}
+@keyframes loadingCss{
+  0%{width: 0%;}
+  75%{width: 70%;}
+  100%{width: 70%;}
+}
+.line2{
+  width: 40%; 
+  height: 6px;
+  background-color:  rgba(0, 247, 255, 0.3);
+  margin-top: 5px;
+  animation: loadingJs 15s; 
+}
+@keyframes loadingJs{
+  0%{width: 0%;}
+  75%{width: 40%;}
+  100%{width: 40%;}
+}
+.other{
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+.otherSkills{
+  font-family: monospace;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:280px){
+  .grid-item{margin-top: 50px;}
+}
+/*soft skills*/
+.softSkills{
+  font-family:'Courier New', Courier, monospace;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.goTo{
+  text-decoration: none;
+  color: white;
+}
+.goTo:hover{
+  color: white;
+}
+.link{
+  margin-top: 90px;
+  font-size: 18px;
+  font-family: monospace;
+  cursor:pointer;
+}
+
+.link {
+  transition: 0.5s;
+  color: white;
+}
